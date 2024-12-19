@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Représentations Artistiques</title>
+
+    <!-- Intégration de la police médiévale -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'MedievalSharp', cursive;
+            background-color: #f4f4f9;
+            color: #fff;
+            text-align: center;
+            background-image: url('https://www.galerie-leserbon.fr/wp-content/uploads/2015/10/Auguste-Lebouys-Ivanhoe-huile-sur-toile-Walter-scott.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3.5rem; /* Augmentation légère de la taille du titre */
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            margin: 30px auto;
+            max-width: 1100px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 90%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content h2 {
+            font-size: 2.2rem;
+            color: #fff;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        /* Conteneur des images */
+        .images-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px; /* Espacement légèrement accru entre les images */
+            width: 100%;
+        }
+
+        .image-section {
+            flex: 1; /* Chaque image prend une largeur égale */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Style des images (légèrement agrandies) */
+        .image-section img {
+            width: 100%; /* Remplit l'espace disponible */
+            max-width: 650px; /* Augmentation de la taille maximale */
+            height: 450px; /* Hauteur légèrement accrue */
+            object-fit: cover; /* Coupe ou redimensionne l'image pour remplir sans déformation */
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .back-to-home {
+            margin-top: 30px;
+        }
+
+        .back-to-home a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Représentations Artistiques d'Ivanhoe</h1>
+
+    <div class="content">
+
+
+        <!-- Conteneur des images -->
+        <div class="images-container">
+            <!-- Première image -->
+            <div class="image-section">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Eugène_Delacroix_-_The_Abduction_of_Rebecca_-_WGA6226.jpg/491px-Eugène_Delacroix_-_The_Abduction_of_Rebecca_-_WGA6226.jpg" alt="L'Enlèvement de Rebecca par Eugène Delacroix">
+                <p>Eugène Delacroix - L'Enlèvement de Rebecca (1850)</p>
+            </div>
+
+            <!-- Deuxième image -->
+            <div class="image-section">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Eugène_Delacroix_-_Rebecca_and_the_Wounded_Ivanhoe_-_2019.141.9_-_Metropolitan_Museum_of_Art.jpg/511px-Eugène_Delacroix_-_Rebecca_and_the_Wounded_Ivanhoe_-_2019.141.9_-_Metropolitan_Museum_of_Art.jpg" alt="Rebecca et Ivanhoe blessé">
+                <p>Eugène Delacroix - Rebecca et Ivanhoe blessé (1846)</p>
+            </div>
+
+            <!-- Troisième image -->
+            <div class="image-section">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Delacroix%2C_Eugène_-_The_Abduction_of_Rebecca_-_1846.jpg/490px-Delacroix%2C_Eugène_-_The_Abduction_of_Rebecca_-_1846.jpg" alt="L'Enlèvement de Rebecca par Eugène Delacroix">
+                <p>Eugène Delacroix - L'Enlèvement de Rebecca (1846)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-to-home">
+        <a <a href="../sommaire.html"">Retour à l'accueil</a>
+
+    </div>
+
+</body>
+</html>

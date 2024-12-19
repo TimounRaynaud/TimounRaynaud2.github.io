@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivanhoe</title>
+
+    <!-- Intégration de la police médiévale -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <style>
+        /* Style global de la page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'MedievalSharp', cursive; /* Application de la police médiévale */
+            overflow: hidden; /* Empêche tout défilement pour un design propre */
+        }
+
+        /* Vidéo YouTube en arrière-plan */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2; /* Vidéo derrière le fond dynamique */
+        }
+
+        .video-background iframe {
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Empêche les clics sur la vidéo */
+            border: none; 
+        }
+
+        /* Image de fond dynamique */
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.galerie-leserbon.fr/wp-content/uploads/2015/10/Auguste-Lebouys-Ivanhoe-huile-sur-toile-Walter-scott-1024x680.jpg'); /* URL de l'image */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Devant la vidéo mais derrière le contenu */
+            opacity: 0.6; 
+            animation: moveBackground 30s linear infinite; /* Animation de mouvement */
+        }
+
+        /* Animation pour déplacer l'image de fond */
+        @keyframes moveBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        /* Style du titre */
+        header h1 {
+            text-align: center;
+            color: white;
+            font-size: 4em; 
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Style du texte principal */
+        main {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            z-index: 1; 
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Style des liens */
+        main p a {
+            color: white;
+            text-decoration: underline;
+            font-size: 1.5em;
+            margin: 10px;
+            display: inline-block;
+            font-family: 'MedievalSharp', cursive; /* Police médiévale */
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Ombre de texte comme pour le titre */
+        }
+
+        main p a:hover {
+            text-decoration: none;
+            color: #ffdd57; /* Couleur au survol */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Image de fond dynamique (par-dessus la vidéo) -->
+    <div class="background-image"></div>
+
+    <!-- Vidéo YouTube en arrière-plan -->
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/3Ch5eUAhPtE?autoplay=1&mute=1&loop=1&playlist=3Ch5eUAhPtE" 
+                frameborder="0" allow="autoplay; loop; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <header>
+        <h1>Ivanhoe</h1> 
+    </header>
+
+    <main>
+        <p>
+            <!-- Lien vers le sommaire uniquement -->
+            <div class="back-to-sommaire">
+              <a href="./sommaire.html">Sommaire</a>
+            </div>
+        </p>
+    </main>
+
+</body>
+</html>

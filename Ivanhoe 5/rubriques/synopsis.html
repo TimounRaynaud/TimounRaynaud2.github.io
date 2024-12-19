@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synopsis du Film Ivanhoé</title>
+
+    <!-- Intégration de la police médiévale -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'MedievalSharp', cursive;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Vidéo YouTube centrée en arrière-plan */
+        .video-background {
+            position: fixed;
+            top: 50%; 
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0.5;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 4rem;
+            margin: 20px 0;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6); /* Fond sombre pour améliorer la lisibilité */
+            border-radius: 10px;
+            width: 90%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1; /* Contenu au-dessus de la vidéo */
+        }
+
+        .synopsis-text {
+            font-size: 1.4rem;
+            line-height: 0,3;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Améliorer la lisibilité */
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: justify;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .images-container img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #fff;
+        }
+
+        .back-links {
+            margin-top: 20px;
+        }
+
+        .back-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            background: #444;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .back-links a:hover {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <!-- Vidéo YouTube centrée en arrière-plan -->
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3Ch5eUAhPtE?autoplay=1&mute=1&loop=1&playlist=3Ch5eUAhPtE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <h1>Synopsis du Film Ivanhoé (1952)</h1>
+
+    <div class="content">
+        <p class="synopsis-text">
+            Réalisé par Richard Thorpe, le film <strong>*Ivanhoé*</strong> est une adaptation cinématographique 
+            du roman historique de Sir Walter Scott de 1820. L'histoire se déroule dans l'Angleterre médiévale 
+            du XIIe siècle, où Ivanhoé, un chevalier saxon, sillonne le royaume à la recherche du roi Richard fait 
+            prisonnier par Léopold D'Autriche.
+        </p>
+
+        <p class="synopsis-text">
+            Ivanhoé va se dresser contre l'usurpateur Jean Sans Terre et les Normands qui refusent de payer 
+            la rançon demandée afin de libérer le roi. Le protagoniste va se lancer dans une quête pour récupérer 
+            la rançon et libérer le roi.
+        </p>
+
+        <p class="synopsis-text">
+            Sur sa route, il va être confronté à des ennemis comme les chevaliers Sir Hugues de Bracy, Briand de 
+            Bois-Guilbert, mais aussi à un dilemme amoureux entre la princesse Rowena et la fille d'Isaac York, Rebecca.
+        </p>
+
+        <div class="images-container">
+            <img src="https://blogduwest2.wordpress.com/wp-content/uploads/2024/02/ivanhoe2.jpg" alt="Affiche du film Ivanhoé 1952">
+        </div>
+
+        <div class="back-links">
+            <a href="https://fr.wikipedia.org/wiki/Ivanho%C3%A9_(film,_1952)" target="_blank">En savoir plus sur Wikipédia</a>
+            <a href="../sommaire.html">Retour à l'accueil</a>
+        </div>
+    </div>
+</body>
+</html>

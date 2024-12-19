@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livres - Ivanhoe</title>
+
+    <!-- Intégration de la police médiévale -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'MedievalSharp', cursive;
+            background-color: #f4f4f9;
+            color: #fff;
+            text-align: center;
+            background-image: url('https://www.galerie-leserbon.fr/wp-content/uploads/2015/10/Auguste-Lebouys-Ivanhoe-huile-sur-toile-Walter-scott.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3.5rem;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .livres-section {
+            margin: 30px auto;
+            max-width: 900px;
+            text-align: left;
+            padding: 0 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour lisibilité */
+            border-radius: 15px;
+            padding-bottom: 20px;
+        }
+
+        .livres-section h2 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .livre {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .livre img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .livre div {
+            max-width: 700px;
+        }
+
+        .livre h3 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin: 5px 0;
+        }
+
+        .livre p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        .back-to-sommaire {
+            margin-top: 30px;
+        }
+
+        .back-to-sommaire a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .back-to-sommaire a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Livres - Ivanhoe</h1>
+
+    <div class="livres-section">
+        <h2>Livres disponibles sur Ivanhoe</h2>
+
+        <!-- Livre Folio Ivanhoe -->
+        <div class="livre">
+            <img src="https://static.fnac-static.com/multimedia/PE/Images/FR/NR/9e/ea/75/7727774/1540-1/tsp20241207082914/Ivanhoe.jpg" alt="Folio Ivanhoe">
+            <div>
+                <h3>Folio Ivanhoe</h3>
+                <p><strong>Traduction et édition :</strong> Henri Suhami</p>
+                <p><strong>Éditeur :</strong> Gallimard</p>
+            </div>
+        </div>
+
+        <!-- Livre Ivanhoe - Le Livre de Poche -->
+        <div class="livre">
+            <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/db/0b/31/3214299/1540-1/tsp20230720135515/Ivanhoe.jpg" alt="Ivanhoe - Le Livre de Poche">
+            <div>
+                <h3>Ivanhoe</h3>
+                <p><strong>Traduction :</strong> Defauconpret</p>
+                <p><strong>Éditeur :</strong> Le Livre de Poche</p>
+            </div>
+        </div>
+
+        <!-- Livre Ivanhoe - Armand Rio (abrégé) -->
+        <div class="livre">
+            <img src="https://m.media-amazon.com/images/I/91HK+d1Em8L._SL1500_.jpg" alt="Ivanhoe - Armand Rio">
+            <div>
+                <h3>Ivanhoe (Texte abrégé)</h3>
+                <p><strong>Traduction et adaptation :</strong> Armand Rio</p>
+                <p><strong>Éditeur :</strong> Le Livre de Poche</p>
+            </div>
+        </div>
+
+        <!-- Livre Ivanhoe - Stefano Emna et Stefano Garau -->
+        <div class="livre">
+            <img src="https://images.epagine.fr/571/9782344026571_1_75.jpg" alt="Ivanhoe - Stefano Emna et Stefano Garau">
+            <div>
+                <h3>Ivanhoe</h3>
+                <p><strong>Traduction :</strong> Stefano Emna et Stefano Garau</p>
+            </div>
+        </div>
+
+        <!-- Livre Great Illustrated Classics - Ivanhoe -->
+        <div class="livre">
+            <img src="https://m.media-amazon.com/images/I/51enp3Hf0mL._AC_UF894,1000_QL80_.jpg" alt="Great Illustrated Classics Ivanhoe">
+            <div>
+                <h3>Great Illustrated Classics Ivanhoe</h3>
+                <p><strong>Auteur :</strong> Sir Walter Scott</p>
+                <p><strong>Éditeur :</strong> Great Illustrated Classics</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-to-sommaire">
+        <a href="../sommaire.html">Retour au sommaire</a>
+    </div>
+
+</body>
+</html>

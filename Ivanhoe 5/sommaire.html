@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sommaire</title>
+
+    <!-- Intégration de la police médiévale -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'MedievalSharp', cursive;
+            background-color: #f4f4f9;
+            color: #fff;
+            text-align: center;
+            background-image: url('https://www.galerie-leserbon.fr/wp-content/uploads/2015/10/Auguste-Lebouys-Ivanhoe-huile-sur-toile-Walter-scott.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .rubriques {
+            margin: 30px auto;
+            max-width: 800px;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .rubriques h2 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .rubriques ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .rubriques ul li {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .rubriques ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .rubriques ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-home {
+            margin-top: 30px;
+        }
+
+        .back-to-home a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sommaire</h1>
+
+    <div class="rubriques">
+        <h2>L'univers d'Ivanhoe</h2>
+        <ul>
+            <li><a href="rubriques/contexte_creation.html">Contexte de création</a></li>
+            <li><a href="rubriques/contexte_historique.html">Contexte historique</a></li>
+            <li><a href="rubriques/personnages_principaux.html">Les personnages principaux</a></li>
+        </ul>
+
+        <!-- Remplacement des sections Tableaux et Sculptures par Représentations -->
+        <h2>Représentations</h2>
+        <ul>
+            <li><a href="rubriques/représentations_artistiques.html"> Représentations artistiques</a></li>
+        </ul>
+
+        <h2>Le film</h2>
+        <ul>
+            <li><a href="rubriques/synopsis.html">Synopsis</a></li>
+            <li><a href="rubriques/acteurs_realisateur.html">Acteurs et Réalisateur</a></li>
+        </ul>
+
+        <h2>Pour approfondir</h2>
+        <ul>
+            <li><a href="rubriques/travaux_universitaires.html">Travaux universitaires</a></li>
+            <li><a href="rubriques/livres.html">Livres</a></li>
+        </ul>
+    </div>
+
+    <div class="back-to-home">
+        <a href="index.html">Retour à l'accueil</a>
+    </div>
+
+</body>
+</html>
